@@ -1,7 +1,7 @@
 ttrss-af_nofacebook
 ===================
 
-Replaces Facebook l.php redirect links with direct ones (for non-social users of the social network RSS pages).
+A Tiny Tiny RSS plugin to Replace Facebook l.php redirect links with direct ones (for non-social users of the social network RSS pages). No more "safety warnings" after clicking on a link!
 
 To install:
 
