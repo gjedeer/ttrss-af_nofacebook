@@ -31,7 +31,7 @@ class Af_Nofacebook extends Plugin {
 	{
 		$url = parse_url($url_str);
 
-		if($url['host'] == 'www.facebook.com' || $url['host'] == 'facebook.com')
+		if($url['host'] == 'www.facebook.com' || $url['host'] == 'facebook.com' || $url['host'] == 'l.facebook.com')
 		{
 			if($url['path'] == '/l.php')
 			{
@@ -49,7 +49,7 @@ class Af_Nofacebook extends Plugin {
 
 	function replace_facebook_redirects($html) 
 	{   
-		preg_match_all('#http(s?)://(www\.?)facebook\.com/l\.php[^\s"\']+#', $html, $matches);
+		preg_match_all('#http(s?)://((www|l)\.?)facebook\.com/l\.php[^\s"\']+#', $html, $matches);
 
 		foreach($matches[0] as $url_str)
 		{
